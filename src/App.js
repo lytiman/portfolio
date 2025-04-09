@@ -1,9 +1,9 @@
-import Home from "./components/Home";
-import Navbar from "./components/Navbar";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Work from "./components/work"
-import Contact from "./components/Contact";
+import Home from "./components/home/Home";
+import Navbar from "./components/navbar/Navbar";
+import About from "./components/about/About";
+import Skills from "./components/skills/Skills";
+import Work from "./components/work/work"
+import Contact from "./components/contact/Contact";
 
 
 

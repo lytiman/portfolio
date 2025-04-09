@@ -3,7 +3,7 @@ import React, {useState} from 'react'
 import {FaBars,FaTimes,FaGithub,FaLinkedin} from 'react-icons/fa'
 import {HiOutlineMail} from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
-import Logo from '../assets/portt.png'
+import Logo from '../../assets/portt.png'
 import {Link} from 'react-scroll';
 function Navbar() {
   const [nav,setNav] = useState(false);
@@ -107,9 +107,19 @@ function Navbar() {
       {/* Social Icon */}
       <div  className = "hidden lg:flex fixed flex-col top-[35%] left-0">
         <ul>
-          <li className=' w-[160px] h-[60px] flex justify-between items-center'><a href="www.linkedin.com/in/letera-mengistu-9a3ab3297" className='flex justify-between items-center w-full text-gray-300 ml-[-100px] hover:ml-[-10px] bg-blue-600'>Linkedin<FaLinkedin size={30}/></a></li>
-          <li className=' w-[160px] h-[60px] flex justify-between items-center'><a href="/" className='flex justify-between items-center w-full text-gray-300 ml-[-100px] hover:ml-[-10px] bg-[#3333]'>Github<FaGithub size={30}/></a></li>
-          <li className=' w-[160px] h-[60px] flex justify-between items-center'><a href="/" className='flex justify-between items-center w-full text-gray-300 ml-[-100px] hover:ml-[-10px] bg-[#6fc2b0]'>Email<HiOutlineMail size={30}/></a></li>
+          <li className=' w-[160px] h-[60px] flex justify-between items-center'><a href="https://www.linkedin.com/in/letera-mengistu-9a3ab3297"   rel="noopener noreferrer"  target="_blank"   className='flex justify-between items-center w-full text-gray-300 ml-[-100px] hover:ml-[-10px] bg-blue-600'>Linkedin<FaLinkedin size={30}/></a></li>
+          <li className=' w-[160px] h-[60px] flex justify-between items-center'><a href="https://github.com/lytiman"  target="_blank"  rel="noopener noreferrer"  className='flex justify-between items-center w-full text-gray-300 ml-[-100px] hover:ml-[-10px] bg-[#3333]'>Github<FaGithub size={30}/></a></li>
+          <li className='w-[160px] h-[60px] flex justify-between items-center'>
+  <a 
+    href="mailto:latomaalfa2020@gmail.com" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className='flex justify-between items-center w-full text-gray-300 ml-[-100px] hover:ml-[-10px] bg-[#6fc2b0]'>
+    Email
+    <HiOutlineMail size={30}/>
+  </a>
+</li>
+
           <li className=' w-[160px] h-[60px] flex justify-between items-center'><a href="/" className='flex justify-between items-center w-full text-gray-300 ml-[-100px] hover:ml-[-10px] bg-[#565f69]'>Resume<BsFillPersonLinesFill size={30}/></a></li>
         </ul>
       </div>

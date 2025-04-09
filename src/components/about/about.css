@@ -1,0 +1,16 @@
+.zoom-paragraph {
+    transform: scale(0.9);
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+  }
+  
+  .zoom-paragraph.visible {
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+  .zoom-paragraph.visible:hover {
+    transform: scale(1.03) translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  }
+  

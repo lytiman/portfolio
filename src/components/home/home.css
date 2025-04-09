@@ -1,0 +1,44 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeInSlideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%); /* Start off-screen to the left */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* End at its original position */
+    }
+}
+
+@keyframes fadeIn3 {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+.first-ad {
+  /* @apply text-4xl font-medium opacity-0; Use Tailwind classes only */
+
+  animation: fadeIn 2s ease-in-out forwards;
+}
+.second-ad {
+    animation: fadeInSlideIn 2s ease-in forwards;
+}
+.third{
+    animation: fadeIn3 2s ease-in-out forwards;
+}

@@ -20,3 +20,9 @@
 .content-div:hover{
   background-image:linear-gradient(to right,rgba(112,157,0.8),hsla(242,74%,61%,0.8))!important ;
 }
+.first-ad {
+  font-size: 40px;
+  font-weight: 500;
+  opacity: 0; /* Start hidden */
+  animation: fadeIn 2s ease-in forwards; /* Trigger fade-in animation */
+}
